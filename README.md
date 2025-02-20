@@ -19,32 +19,34 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project show
 ## Overview
 
 - **Robot Platform**: [Unitree-Go2](https://www.unitree.com/products/go2)
-- **SLAM**: Multiple SLAM frameworks supported (e.g., SLAM Toolbox, RTAB-Map, etc.)
+- **SLAM**: ROS 2 RTAB-Map
 - **Navigation**: ROS 2 Nav2
-- **Primary Objective**: Demonstrate the feasibility of autonomous mapping and navigation on a quadruped robot.
+
 
 ### Key Features
 
 - **Real-time mapping** in indoor or outdoor environments
 - **Obstacle avoidance** using Nav2 and sensor data
+- **Sensor Infusion** infuse RGB Depth Camera with LIDAR point cloud
 - **Autonomous path planning** to specified goals
-- **Future expansions** to incorporate advanced perception or multi-robot collaboration
+- **Future expansions** to incorporate autonomous exploration
 
 ---
 
 ## Demo Videos
 
-Here are links to demonstration videos showing the current capabilities. (Choose your preferred method: embed from YouTube, link to cloud storage, or upload directly to GitHub if they’re small enough.)
+Here are videos showing latest capabilities.
 
 1. [SLAM Demo Video](#)  
-   *Brief description of what this demo showcases.*  
-   \- **Link**: [YouTube / Drive / Local link here](https://example.com)
+   *Demo of integrated SLAM with Unitree-Go2 with Robosense Lidar using RTAB-Map in ROS2*
+https://github.com/user-attachments/assets/99b8062b-3fb6-4a19-bc97-b03568393300
 
-2. [Autonomous Navigation Demo Video](#)  
-   *Brief description of how the robot navigates autonomously.*  
-   \- **Link**: [YouTube / Drive / Local link here](https://example.com)
+3. [Autonomous Navigation Demo Video](#)  
+   *Demo of integrated Autonomous Navigation with Unitree-Go2 using Nav-2 Stack in ROS2*
 
-*(If you want to embed YouTube videos in markdown, you can’t do it directly in GitHub’s rendered markdown, but you can provide a thumbnail and link. Alternatively, a pure link is often enough.)*
+https://github.com/user-attachments/assets/3f4abc8c-d612-4665-a894-e6b635843b2e
+
+
 
 ---
 
@@ -65,26 +67,4 @@ Here are links to demonstration videos showing the current capabilities. (Choose
 - **Advanced Features**: Explore advanced navigation behaviors, multi-sensor fusion, and mapping in dynamic environments.  
 
 Feel free to open an issue if there’s a specific feature or topic you’d like to see.
-
----
-
-## How to Contribute
-
-Contributions will be welcomed once the code and documentation are public. Here are some guidelines:
-
-1. **Fork** the repository.
-2. **Create a new branch** for your feature or bug fix.
-3. **Commit** your changes with clear and descriptive messages.
-4. **Open a Pull Request** and explain the changes you made.
-
-Once everything is ready, we will gladly review and merge your contributions!
-
----
-
-## License
-
-*(Optional, but highly recommended)*
-
-If you plan to release your code under an open-source license, add it here. For example:
-
 
