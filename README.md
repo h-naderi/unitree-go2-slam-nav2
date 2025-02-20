@@ -10,9 +10,6 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project show
 2. [Demo Videos](#demo-videos)
 3. [Project Status](#project-status)
 4. [Future Plans](#future-plans)
-5. [How to Contribute](#how-to-contribute)
-6. [License](#license)
-7. [Contact](#contact)
 
 ---
 
@@ -39,6 +36,7 @@ Here are videos showing latest capabilities.
 
 1. [SLAM Demo Video](#)  
    *Demo of integrated SLAM with Unitree-Go2 with Robosense Lidar using RTAB-Map in ROS2*
+
 https://github.com/user-attachments/assets/99b8062b-3fb6-4a19-bc97-b03568393300
 
 3. [Autonomous Navigation Demo Video](#)  
