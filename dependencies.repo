@@ -1,0 +1,20 @@
+repositories:
+  unitree_go2_slam_nav2:
+    type: git
+    url: https://github.com/h-naderi/unitree-go2-slam-nav2
+    version: main
+
+  unitree_sdk:
+    type: git
+    url: https://github.com/unitreerobotics/unitree_ros2
+    version: main
+
+  lidar_sdk:
+    type: git
+    url: https://github.com/RoboSense-LiDAR/rslidar_sdk
+    version: master
+
+  lidar_msg:
+    type: git
+    url: https://github.com/RoboSense-LiDAR/rslidar_msg
+    version: master
