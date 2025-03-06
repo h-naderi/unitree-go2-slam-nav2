@@ -1,6 +1,8 @@
 # Unitree-Go2 Robot: SLAM and Nav2 Demos
 
-Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project showcases the integration of SLAM (Simultaneous Localization and Mapping) and autonomous navigation using Nav2 on the Unitree-Go2 robot. Currently, this repository primarily includes demonstration videos. In the coming weeks, I will be adding the code, documentation, and additional details about the robot setup and the overall project.
+*By: Hossein Naderi*
+
+Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project demonstrates the integration of SLAM (Simultaneous Localization and Mapping) and autonomous navigation using Nav2 on the Unitree-Go2 robot. The repository includes demonstration videos, source code, and comprehensive documentation to assist in replicating and building upon the showcased capabilities.&#8203;:contentReference[oaicite:0]{index=0}
 
 ---
 
@@ -8,8 +10,11 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project show
 
 1. [Overview](#overview)
 2. [Demo Videos](#demo-videos)
-3. [Project Status](#project-status)
-4. [Future Plans](#future-plans)
+3. [Project Structure](#project-structure)
+4. [Dependencies](#dependencies)
+5. [Workspace Setup](#workspace-setup)
+6. [Launch Files](#launch-files)
+7. [Detailed Project Explanations](#detailed-project-explanations)
 
 ---
 
@@ -19,50 +24,134 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project show
 - **SLAM**: ROS 2 RTAB-Map
 - **Navigation**: ROS 2 Nav2
 
-
 ### Key Features
 
-- **Real-time mapping** in indoor or outdoor environments
+- **Real-time mapping** in indoor and outdoor environments
 - **Obstacle avoidance** using Nav2 and sensor data
-- **Sensor Infusion** infuse RGB Depth Camera with LIDAR point cloud
+- **Sensor fusion** combining RGB Depth Camera with LiDAR point cloud
 - **Autonomous path planning** to specified goals
-- **Future expansions** to incorporate autonomous exploration
+- **Facial recognition** capabilities for identifying individuals during navigation
 
 ---
 
 ## Demo Videos
 
-Here are videos showing latest capabilities.
+1. **SLAM Demo Video**  
+   *Demonstration of integrated SLAM with Unitree-Go2 using RTAB-Map in ROS2.*
 
-1. [SLAM Demo Video](#)  
-   *Demo of integrated SLAM with Unitree-Go2 with Robosense Lidar using RTAB-Map in ROS2*
+   [![SLAM Demo Video](https://github.com/user-attachments/assets/99b8062b-3fb6-4a19-bc97-b03568393300)](https://github.com/user-attachments/assets/99b8062b-3fb6-4a19-bc97-b03568393300)
 
-https://github.com/user-attachments/assets/99b8062b-3fb6-4a19-bc97-b03568393300
+2. **Autonomous Navigation Demo Video**  
+   *Demonstration of integrated Autonomous Navigation with Unitree-Go2 using Nav2 Stack in ROS2.*
 
-3. [Autonomous Navigation Demo Video](#)  
-   *Demo of integrated Autonomous Navigation with Unitree-Go2 using Nav-2 Stack in ROS2*
-
-https://github.com/user-attachments/assets/3f4abc8c-d612-4665-a894-e6b635843b2e
-
-
+   [![Autonomous Navigation Demo Video](https://github.com/user-attachments/assets/3f4abc8c-d612-4665-a894-e6b635843b2e)](https://github.com/user-attachments/assets/3f4abc8c-d612-4665-a894-e6b635843b2e)
 
 ---
 
-## Project Status
+## Project Structure
 
-**Current Status**: In progress
+:contentReference[oaicite:1]{index=1}&#8203;:contentReference[oaicite:2]{index=2}
 
-- This project is currently at the demonstration stage.  
-- The project repository is planned to contain source code, hardware documentation, and detailed guides in future commits.
+unitree-go2-slam-nav2/ ├── frontier/ ├── go2_cmd_processor/ ├── go2_slam_nav/ ├── image_processing/ ├── dependencies.repo └── README.md
+
+
+- **`frontier/`**: :contentReference[oaicite:3]{index=3}&#8203;:contentReference[oaicite:4]{index=4}
+- **`go2_cmd_processor/`**: :contentReference[oaicite:5]{index=5}&#8203;:contentReference[oaicite:6]{index=6}
+- **`go2_slam_nav/`**: :contentReference[oaicite:7]{index=7}&#8203;:contentReference[oaicite:8]{index=8}
+- **`image_processing/`**: :contentReference[oaicite:9]{index=9}&#8203;:contentReference[oaicite:10]{index=10}
+- **`dependencies.repo`**: :contentReference[oaicite:11]{index=11}&#8203;:contentReference[oaicite:12]{index=12}
+- **`README.md`**: :contentReference[oaicite:13]{index=13}&#8203;:contentReference[oaicite:14]{index=14}
 
 ---
 
-## Future Plans
+## Dependencies
 
-- **Code Release**: Upload and organize the SLAM and Nav2 integration codebase.  
-- **Documentation**: Detailed setup instructions, including how to install dependencies and configure the robot.  
-- **Tutorials**: Step-by-step guides on how to replicate the experiments and demos.  
-- **Advanced Features**: Explore advanced navigation behaviors, multi-sensor fusion, and mapping in dynamic environments.  
+:contentReference[oaicite:15]{index=15}&#8203;:contentReference[oaicite:16]{index=16}
 
-Feel free to open an issue if there’s a specific feature or topic you’d like to see.
+- **Unitree SDK**: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)
+- **LiDAR SDK**: [https://github.com/RoboSense-LiDAR/rslidar_sdk](https://github.com/RoboSense-LiDAR/rslidar_sdk)
+- **LiDAR Messages**: [https://github.com/RoboSense-LiDAR/rslidar_msg](https://github.com/RoboSense-LiDAR/rslidar_msg)
+
+:contentReference[oaicite:17]{index=17}&#8203;:contentReference[oaicite:18]{index=18}
+
+---
+
+## Workspace Setup
+
+:contentReference[oaicite:19]{index=19}&#8203;:contentReference[oaicite:20]{index=20}
+
+1. **Create your workspace:**
+   ```bash
+   mkdir -p ~/ws/src
+   cd ~/ws/src
+   ```
+
+2. **Clone this repository:**
+   ```bash
+   git clone https://github.com/h-naderi/unitree-go2-slam-nav2.git
+
+   ```
+3. **Navigate to the repository:**
+
+   ```bash
+   cd unitree-go2-slam-nav2
+   ```
+
+4. **Import dependencies using `vcs`:**
+
+   ```bash
+   vcs import < dependencies.repo
+   ```   
+5. **Install dependencies and build the workspace:**
+
+   ```bash
+   cd ~/ws
+   rosdep install --from-paths src --ignore-src -r -y
+   colcon build
+   ```
+
+6. **Source the workspace:**
+
+   ```bash
+   source ~/ws/install/setup.bash
+   ```
+
+---
+
+## Launch Files
+
+1. **Launch the Intel RealSense camera node:**
+    ```sh
+    ros2 launch realsense2_camera rs_launch.py enable_gyro:=true enable_accel:=true unite_imu_method:=1 enable_infra1:=true enable_infra2:=true enable_sync:=true
+    ```
+
+2. **Launch everything on the robot for mapping with the LiDAR only:**
+    ```sh
+    ros2 launch go2_slam_nav mapping.launch.py
+    ```
+
+3. **Launch the robot with the RealSense camera and the LiDAR:**
+    ```sh
+    ros2 launch go2_slam_nav mapping_camera.launch.py
+    ```
+4. **Launch the navigation:**
+    ```sh
+    ros2 launch go2_slam_nav nav.launch.py
+    ```
+
+5. **Launch the exploration node only:**
+    ```sh
+    ros2 launch frontier frontier_update.launch.xml
+    ```
+
+
+
+Feel free to reach out if you have any questions or need further assistance with setting up the project.
+
+## Detailed Project Explanations
+
+For comprehensive explanations and insights into each project component, please refer to my portfolio:
+
+- **SLAM Project**: [SLAM Project](https://h-naderi.github.io/projects/1-slam)
+- **Autonomous Navigation**: [Navigation Project](https://h-naderi.github.io/projects/3-auto-nav-and-exploration)
 
