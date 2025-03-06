@@ -1,0 +1,11 @@
+<launch>
+    <arg name="use_rviz2" default="true"
+        description="Determines whether to use rviz or not - true or false" />
+
+    <node pkg="frontier" exec="explore_update" name="frontier_exploration" output="screen">
+    </node>
+
+    <node name="rviz2" pkg="rviz2" exec="rviz2" args="-d $(find-pkg-share frontier)/config/frontier_only.rviz"
+    if="$(eval '\'$(var use_rviz2)\' == \'true\'')"/>
+</launch>
+
