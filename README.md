@@ -11,10 +11,9 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project demo
 1. [Overview](#overview)
 2. [Demo Videos](#demo-videos)
 3. [Project Structure](#project-structure)
-4. [Dependencies](#dependencies)
-5. [Workspace Setup](#workspace-setup)
-6. [Launch Files](#launch-files)
-7. [Detailed Project Explanations](#detailed-project-explanations)
+4 [Workspace Setup](#workspace-setup)
+5. [Launch Files](#launch-files)
+6. [Detailed Project Explanations](#detailed-project-explanations)
 
 ---
 
@@ -46,27 +45,11 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project demo
 
    [![Autonomous Navigation Demo Video](https://github.com/user-attachments/assets/3f4abc8c-d612-4665-a894-e6b635843b2e)](https://github.com/user-attachments/assets/3f4abc8c-d612-4665-a894-e6b635843b2e)
 
----
 
-## Project Structure
-
-:contentReference[oaicite:1]{index=1}&#8203;:contentReference[oaicite:2]{index=2}
-
-unitree-go2-slam-nav2/ ├── frontier/ ├── go2_cmd_processor/ ├── go2_slam_nav/ ├── image_processing/ ├── dependencies.repo └── README.md
-
-
-- **`frontier/`**: :contentReference[oaicite:3]{index=3}&#8203;:contentReference[oaicite:4]{index=4}
-- **`go2_cmd_processor/`**: :contentReference[oaicite:5]{index=5}&#8203;:contentReference[oaicite:6]{index=6}
-- **`go2_slam_nav/`**: :contentReference[oaicite:7]{index=7}&#8203;:contentReference[oaicite:8]{index=8}
-- **`image_processing/`**: :contentReference[oaicite:9]{index=9}&#8203;:contentReference[oaicite:10]{index=10}
-- **`dependencies.repo`**: :contentReference[oaicite:11]{index=11}&#8203;:contentReference[oaicite:12]{index=12}
-- **`README.md`**: :contentReference[oaicite:13]{index=13}&#8203;:contentReference[oaicite:14]{index=14}
-
----
 
 ## Dependencies
 
-:contentReference[oaicite:15]{index=15}&#8203;:contentReference[oaicite:16]{index=16}
+
 
 - **Unitree SDK**: [https://github.com/unitreerobotics/unitree_ros2](https://github.com/unitreerobotics/unitree_ros2)
 - **LiDAR SDK**: [https://github.com/RoboSense-LiDAR/rslidar_sdk](https://github.com/RoboSense-LiDAR/rslidar_sdk)
