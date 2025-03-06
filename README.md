@@ -11,7 +11,7 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project demo
 1. [Overview](#overview)
 2. [Demo Videos](#demo-videos)
 3. [Project Structure](#project-structure)
-4 [Workspace Setup](#workspace-setup)
+4. [Workspace Setup](#workspace-setup)
 5. [Launch Files](#launch-files)
 6. [Detailed Project Explanations](#detailed-project-explanations)
 
@@ -55,7 +55,6 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project demo
 - **LiDAR SDK**: [https://github.com/RoboSense-LiDAR/rslidar_sdk](https://github.com/RoboSense-LiDAR/rslidar_sdk)
 - **LiDAR Messages**: [https://github.com/RoboSense-LiDAR/rslidar_msg](https://github.com/RoboSense-LiDAR/rslidar_msg)
 
-:contentReference[oaicite:17]{index=17}&#8203;:contentReference[oaicite:18]{index=18}
 
 ---
 
