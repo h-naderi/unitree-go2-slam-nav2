@@ -61,7 +61,7 @@ Welcome to the **Unitree-Go2 Robot SLAM and Nav2** repository! This project demo
 
 ## Workspace Setup
 
-:contentReference[oaicite:19]{index=19}&#8203;:contentReference[oaicite:20]{index=20}
+
 
 1. **Create your workspace:**
    ```bash
